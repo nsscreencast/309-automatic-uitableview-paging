@@ -1,0 +1,14 @@
+platform :ios, '11.0'
+
+plugin 'cocoapods-keys', {
+  project: 'BeerScroller',
+  keys: [
+    'BreweryDBApiKey'
+  ]
+}
+
+target 'BeerScroller' do
+  use_frameworks!
+
+  pod 'Alamofire'
+end
